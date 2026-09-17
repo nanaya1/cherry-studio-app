@@ -63,7 +63,9 @@ export async function requestWithTimeout<T>(
 
 export async function pairDesktop(baseUrls: string[], qr: DesktopPairingQr, signal: AbortSignal) {
   const reportedDeviceName = (Device.deviceName ?? Device.modelName ?? '').trim();
-  const deviceName = (reportedDeviceName || 'Cherry Studio Mobile').slice(0, 64);
+  // [local] Original default device name disabled; replacement below. Restore by uncommenting.
+  // const deviceName = (reportedDeviceName || 'Cherry Studio Mobile').slice(0, 64);
+  const deviceName = (reportedDeviceName || 'MEA Cowork Mobile').slice(0, 64); // [local] replaces 'Cherry Studio Mobile'
   for (const baseUrl of baseUrls) {
     try {
       return await requestWithTimeout(

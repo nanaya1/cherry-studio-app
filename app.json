@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Cherry Studio",
+    "name": "MEA Cowork",
     "slug": "cherry-studio",
     "version": "0.1.0",
     "orientation": "portrait",
@@ -67,10 +67,10 @@
           "UIInterfaceOrientationLandscapeLeft",
           "UIInterfaceOrientationLandscapeRight"
         ],
-        "NSCalendarsWriteOnlyAccessUsageDescription": "Allow Cherry Studio to add calendar events when you ask the assistant.",
-        "NSHealthShareUsageDescription": "Allow Cherry Studio to read selected health and fitness data when you ask the assistant.",
-        "NSHealthUpdateUsageDescription": "Cherry Studio reads selected Apple Health data to answer your health and fitness questions. It does not save or modify data in Apple Health.",
-        "NSLocalNetworkUsageDescription": "Allow Cherry Studio to connect to the Cherry Studio desktop app, AI providers, and MCP servers on your local network.",
+        "NSCalendarsWriteOnlyAccessUsageDescription": "Allow MEA Cowork to add calendar events when you ask the assistant.",
+        "NSHealthShareUsageDescription": "Allow MEA Cowork to read selected health and fitness data when you ask the assistant.",
+        "NSHealthUpdateUsageDescription": "MEA Cowork reads selected Apple Health data to answer your health and fitness questions. It does not save or modify data in Apple Health.",
+        "NSLocalNetworkUsageDescription": "Allow MEA Cowork to connect to the MEA Cowork desktop app, AI providers, and MCP servers on your local network.",
         "NSBonjourServices": ["_cherrystudio-api._tcp"],
         "NSAppTransportSecurity": {
           "NSAllowsLocalNetworking": true
@@ -156,7 +156,7 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow Cherry Studio to scan desktop pairing QR codes and take photos for chat messages and drawings.",
+          "cameraPermission": "Allow MEA Cowork to scan desktop pairing QR codes and take photos for chat messages and drawings.",
           "microphonePermission": false,
           "recordAudioAndroid": false,
           "barcodeScannerEnabled": true
@@ -165,8 +165,8 @@
       [
         "expo-calendar",
         {
-          "calendarPermission": "Allow Cherry Studio to access calendars when you ask the assistant.",
-          "remindersPermission": "Allow Cherry Studio to access reminders when you ask the assistant."
+          "calendarPermission": "Allow MEA Cowork to access calendars when you ask the assistant.",
+          "remindersPermission": "Allow MEA Cowork to access reminders when you ask the assistant."
         }
       ],
       [
@@ -177,8 +177,8 @@
           "isIosBackgroundLocationEnabled": false,
           "locationAlwaysAndWhenInUsePermission": false,
           "locationAlwaysPermission": false,
-          "motionUsagePermission": "Cherry Studio does not read or track your motion and fitness activity. This permission description is required by the location service included in the app.",
-          "locationWhenInUsePermission": "Allow Cherry Studio to use your location when you ask the assistant."
+          "motionUsagePermission": "MEA Cowork does not read or track your motion and fitness activity. This permission description is required by the location service included in the app.",
+          "locationWhenInUsePermission": "Allow MEA Cowork to use your location when you ask the assistant."
         }
       ],
       "expo-document-picker",
@@ -192,16 +192,16 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "Allow Cherry Studio to preview and select photos for drawings and chat messages.",
-          "cameraPermission": "Allow Cherry Studio to scan desktop pairing QR codes and take photos for chat messages and drawings.",
+          "photosPermission": "Allow MEA Cowork to preview and select photos for drawings and chat messages.",
+          "cameraPermission": "Allow MEA Cowork to scan desktop pairing QR codes and take photos for chat messages and drawings.",
           "microphonePermission": false
         }
       ],
       [
         "expo-media-library",
         {
-          "photosPermission": "Allow Cherry Studio to preview photos for drawings and chat messages.",
-          "savePhotosPermission": "Allow Cherry Studio to save photos.",
+          "photosPermission": "Allow MEA Cowork to preview photos for drawings and chat messages.",
+          "savePhotosPermission": "Allow MEA Cowork to save photos.",
           "preventAutomaticLimitedAccessAlert": true,
           "granularPermissions": ["photo"]
         }

@@ -895,8 +895,12 @@ describe('MobileAgentHost', () => {
       model: { providerId: 'mock-provider', modelId: 'mock-model' },
       options: { maxOutputTokens: 512, reasoningEffort: 'low', temperature: 0.2 },
     });
+    // [local] Original assertion disabled; brand replaced below. Restore by uncommenting.
+    // expect(requests[0]?.instructions).toContain(
+    //   'The current Cherry Studio App language is `zh-CN`.',
+    // );
     expect(requests[0]?.instructions).toContain(
-      'The current Cherry Studio App language is `zh-CN`.',
+      'The current MEA Cowork App language is `zh-CN`.', // [local] replaces Cherry Studio
     );
 
     // A second turn feeds the stored transcript back as history.

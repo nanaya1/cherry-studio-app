@@ -134,7 +134,9 @@ export function StartupCover({
         ]}
       >
         <Text accessible={false} allowFontScaling={false} style={styles.brandText}>
-          Cherry Studio
+          {/* [local] Original brand name disabled; replacement below. Restore by uncommenting. */}
+          {/* Cherry Studio */}
+          MEA Cowork {/* [local] replaces Cherry Studio */}
         </Text>
       </Animated.View>
     </Animated.View>

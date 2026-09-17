@@ -41,11 +41,15 @@ describe('buildAgentSystemPrompt', () => {
       tools: [],
     });
 
-    expect(prompt).toContain('# Cherry Studio Mobile Runtime');
+    // [local] Original assertions disabled; brand replaced below. Restore by uncommenting.
+    // expect(prompt).toContain('# Cherry Studio Mobile Runtime');
+    expect(prompt).toContain('# MEA Cowork Mobile Runtime'); // [local] replaces Cherry Studio
     expect(prompt).toContain('Treat the tools exposed for this turn as the complete');
     expect(prompt).toContain('carry it through the necessary tool steps');
     expect(prompt).toContain('persistent memory, or background execution');
-    expect(prompt).toContain('The current Cherry Studio App language is `zh-CN`.');
+    // [local] Original assertion disabled; brand replaced below. Restore by uncommenting.
+    // expect(prompt).toContain('The current Cherry Studio App language is `zh-CN`.');
+    expect(prompt).toContain('The current MEA Cowork App language is `zh-CN`.'); // [local] replaces Cherry Studio
     expect(prompt).toContain('The current local date is `2026-09-03`.');
     expect(prompt).toContain('You must write every response in this language');
     expect(prompt).not.toContain('## Agent Instructions');
